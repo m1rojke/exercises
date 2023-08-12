@@ -129,15 +129,42 @@ addBinary(1, 1, 1, 1);
 const minMax = () => {
   console.log(Math.max(...arra));
   console.log(Math.min(...arra));
-}
+};
 
 minMax();
 
-// Программа которая удаляет все нулевые элементы 
+// Программа которая удаляет все нулевые элементы
 const offZero = () => {
-  let result = pzn.filter((el) => el !== 0)
-  console.log(result)
-}
+  let result = pzn.filter((el) => el !== 0);
+  console.log(result);
+};
 
 offZero();
 
+// Программа которая проверяет есть ли заданное число в массиве
+const trueNumber = () => {
+  let targetNumber = 10;
+  let containsNumber = pzn.includes(targetNumber);
+  console.log(containsNumber);
+};
+
+trueNumber();
+
+//Программа которая объеденяет два массива в один
+const twoInOne = () => {
+  console.log(arra.concat(pzn));
+};
+
+twoInOne();
+
+//Праграмма которая находит сумму элементов на четных позициях
+const arr1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const sumEven = () => {
+  let count = 0;
+  for(i = 0; i < arr1.length; i +=2) {
+    count += arr1[i];
+  }
+  console.log(count);
+};
+
+sumEven();
