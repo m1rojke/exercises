@@ -168,3 +168,29 @@ const sumEven = () => {
 };
 
 sumEven();
+
+//Программа которая находит индекс первого вхождения заданного числа
+const indexX = () => {
+  let targetNumber = 0;
+  let index = pzn.indexOf(targetNumber);
+  console.log(index);
+}
+
+indexX();
+
+//Программа которая проверяет слово на палиндром
+const palindrom = (str) => {
+  let word = str.split('').reverse().join("")
+  console.log(str == word);
+}
+
+palindrom("happy");
+
+//Програма которая проверяет количетво слов в строке
+const wordInStr = (str) => {
+  let words = str.split(' ');
+  console.log(words.length)
+}
+
+wordInStr("Hello world");
+
